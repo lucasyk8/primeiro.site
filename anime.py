@@ -47,7 +47,7 @@ class AnimeList(Resource):
         Animes[anime_id] = {'MAL_ID': args['MAL_ID'], 'Name': args['Name']}
         return json.dumps(Animes[anime_id]), 201
 
-api.add_resource(AnimeList, '/anime')
+api.add_resource(AnimeList, '/')
 api.add_resource(Anime, '/anime/<int:anime_id>')
 
 
