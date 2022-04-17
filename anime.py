@@ -5,7 +5,7 @@ flask.helpers._endpoint_from_view_func = flask.scaffold._endpoint_from_view_func
 from flask_restful import reqparse, abort, Api, Resource
 import json
 
-#iniciar flask padrão
+#iniciar flask padrÃ£o
 app = Flask(__name__)
 api = Api(app)
 
@@ -52,4 +52,8 @@ api.add_resource(Anime, '/anime/<int:anime_id>')
 
 
 #rodar a API
-app.run()
+if __name__ == "__main__":
+    app.run(debug=True)
+
+#server do heroku
+
